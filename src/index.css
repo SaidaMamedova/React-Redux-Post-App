@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .home-page {
+    @apply flex justify-center mt-5 text-4xl font-abril font-bold mx-auto px-6 py-2 border-b-[3px] border-slate-100 rounded-3xl text-blue-950 drop-shadow-md gradient-text
+  }
+
+  .button {
+    @apply flex flex-row py-1 px-2 items-center border rounded-xl text-slate-900 bg-gradient-to-r hover:from-blue-300 hover:to-green-300 shadow-lg hover:border-slate-200 shadow-slate-400 from-blue-200 to-green-200 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-100
+  }
+
+  .goBack {
+    @apply hover:fill-blue-800 fill-blue-950 sm:size-20 size-16 hover:-translate-y-1 hover:scale-110 duration-200
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #9d9eff, #175bc1, #083061);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
